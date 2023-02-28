@@ -1,0 +1,35 @@
+.navbar-menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        justify-items: center;
+        margin-bottom: 0;
+        align-items: center;
+
+        a {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+            text-decoration: none;
+        }
+    }
+
+    .navbar-icons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-left: 2rem;
+        
+        a {
+            color: #000;
+        }
+
+}
+}
