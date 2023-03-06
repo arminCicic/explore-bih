@@ -1,0 +1,101 @@
+.home-wrapper {
+    position: relative;
+    background-image: url(../../assets/images/bih-home.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 640px;    
+
+    .home {
+        position: absolute;
+        top:34%;
+        display: block;
+        text-align: center;
+        width: 100%;
+
+        h2 {
+            margin-bottom: 14px;
+             letter-spacing: -2px;
+             color: #fff;
+             font-size: 50px;
+             font-weight: 700;
+             text-shadow: 3px 3px 3px rgb(0 0 0 / 50%);
+        }
+
+        h3 {
+            color: #fff;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 3px rgb(0 0 0 / 50%);
+            font-size: 24px;
+            font-weight: 300;
+            padding: 0 40px;
+        }
+    }
+    
+    @media (max-width: 640px) {
+        height: 340px;
+
+        .home {
+
+            h2 {
+                font-size: 28px;
+                letter-spacing: -1px;
+                padding: 0 10px;
+            }
+
+            h3 {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .global-search {
+        border-radius: 3px;
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 100%;
+        padding: 16px 10px 10px;
+        font-size: 18px;
+        position: absolute;
+        top:60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        
+
+        .global-search-input-wrapper {
+        width: 80%;
+        border-radius: 63px;
+        display: inline-block;
+        background: #fff;
+        padding: 6px;
+        min-width: 350px;
+
+        input[type=text] {
+            cursor: pointer;
+            border: none;
+            padding: 7px 40px 7px 16px;
+            outline: none;
+            width: 100%;
+            max-width: 400px;
+            background: transparent;
+        }
+        }
+
+        .global-search-button{
+             display: inline-block;
+             width: 20px;
+             margin-left: -50px;
+
+             a {
+                background: linear-gradient(to right,#22acf4,#0583da);
+                padding: 8px 13px;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 36px;
+                display: inline-block;
+             }
+        }
+    }
+}

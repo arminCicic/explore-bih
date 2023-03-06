@@ -1,9 +1,9 @@
-<div class="navbar-menu-container">
+<div class="navbar-container">
 
-  <div>
+  <div class="menu-wrapper">
     <!-- Hamburger menu -->
-    <div class="menu-wrapper">
-      <mat-icon>menu</mat-icon>
+    <div class="menu">
+      <mat-icon (click)="toggleBtn()" class="icon">{{ showMenu ? 'menu' : 'close' }}</mat-icon>
     </div>
     <!-- LOGO -->
       <a  href="/" title="Santorini View">

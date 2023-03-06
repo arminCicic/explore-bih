@@ -1,13 +1,20 @@
-.navbar-menu-container {
+.navbar-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
 
-    .menu-wrapper {
-        display: inline-block;
+    .menu-wrapper {      
+            display: flex;
+            align-items: center;
+            gap: 10px; 
+            
+            .icon {
+                cursor: pointer;
+            }
     }
 
+   
     @media (max-width: 640px) {
         img {
             width: 120px;
@@ -16,7 +23,7 @@
     }
 
     @media (min-width: 640px) {
-        .menu-wrapper {
+        .menu {
             display: none;
         }
     }
@@ -37,7 +44,7 @@
         }
     }
 
-    @media (max-width: 1100px) {
+    @media (max-width: 1150px) {
         ul {
             display: none;
         } 
@@ -63,3 +70,7 @@
 
 }
 }
+
+
+
+
