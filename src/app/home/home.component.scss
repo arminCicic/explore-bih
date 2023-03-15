@@ -31,8 +31,14 @@
             padding: 0 40px;
         }
     }
+
+    @media (max-width: 1280px) {
+        .home {
+            top:28%;
+        }
+    }
     
-    @media (max-width: 640px) {
+    @media (max-width: 670px) {
         height: 340px;
 
         .home {
@@ -234,7 +240,7 @@
         
     }
 
-    @media (max-width: 1080px) {
+    @media (max-width: 1090px) {
         .section-inner {
             .options-menu {
                 padding: 0;
@@ -248,7 +254,7 @@
                     border-radius: 0px;
                 }
 
-                @media (max-width: 760px) {
+                @media (max-width: 800px) {
    
                     a {
                         flex-basis: 33%;                   
