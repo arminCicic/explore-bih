@@ -7,6 +7,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { MatIconModule } from '@angular/material/icon';
 import { HomeComponent } from './home/home.component';
 import { TravelGuideComponent } from './home/travel-guide/travel-guide.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { TravelGuideComponent } from './home/travel-guide/travel-guide.component
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    TravelGuideComponent
+    TravelGuideComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
