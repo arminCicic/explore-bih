@@ -8,6 +8,10 @@
             display: flex;
             align-items: center;
             gap: 10px; 
+
+            img {
+                height: 40px;
+            }
             
             .icon {
                 cursor: pointer;
@@ -17,7 +21,7 @@
    
     @media (max-width: 640px) {
         img {
-            width: 120px;
+            margin-bottom: 7px;
         }
        
     }

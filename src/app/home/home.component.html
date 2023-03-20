@@ -20,8 +20,8 @@
     <div class="icons-container">
 
         <div class="categories">         
-            <a href="/"> <i class="fa-regular fa-compass"></i>Tours</a>  
-            <a href="/"><i class="fa-solid fa-bed"></i>Hotels</a>
+            <a routerLink="/tours"> <i class="fa-regular fa-compass"></i>Tours</a>  
+            <a routerLink="/accomodation"><i class="fa-solid fa-bed"></i>Hotels</a>
             <a href="/"><i class="fa-solid fa-mountain"></i>Mountain hikes</a>
             <a href="/"><i class="fa-solid fa-city"></i>Private tours & Cruises</a>
         </div>
@@ -39,8 +39,8 @@
     <div class="section-wrapper">
         <div class="section-inner">
             <div class="options-menu">
-               <a href="/"><i class="fa-solid fa-bed icon-lg"></i><h5>Hotels & Villas</h5></a>
-               <a href="/"><i class="fa-solid fa-ship icon-lg"></i><h5>Tours & Cruises</h5></a>
+               <a routerLink="/accomodation"><i class="fa-solid fa-bed icon-lg"></i><h5>Hotels & Villas</h5></a>
+               <a routerLink="/tours"><i class="fa-solid fa-ship icon-lg"></i><h5>Tours & Cruises</h5></a>
                <a href="/"><i class="fa-solid fa-bus icon-lg"></i><h5>TAXI & Transfers</h5></a>
                <a href="/"><i class="fa-solid fa-utensils icon-lg"></i><h5>Restaurants</h5></a>
                <a href="/"><i class="fa-solid fa-building-columns icon-lg"></i><h5>Things to do</h5></a>
@@ -60,6 +60,7 @@
     </div>
 
     <app-travel-guide></app-travel-guide>
+    <app-accomodation></app-accomodation>
 
     <app-footer></app-footer>
 

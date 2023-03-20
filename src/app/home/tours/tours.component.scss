@@ -1,0 +1,74 @@
+.tours-title {
+    .small-title {
+    font-size: 13px;
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 100px 122px 0px 122px;
+
+    }
+
+    .large-title {
+    font-size: 66px;
+    color: #111;
+    font-weight: 600;
+    padding: 20px 120px;
+    }
+
+    @media (max-width: 1080px) {
+        .large-title {
+            font-size: 45px;
+        }
+    }
+
+    .title-dsc {
+        font-size: 23px;
+        font-weight: 300;
+        padding: 20px 120px;
+        margin-bottom: 50px;
+    }
+
+
+}
+
+.guide {
+    
+    p {
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 25px;
+        font-weight: 300;
+        padding: 30px 200px  5px 200px;
+    }
+
+    .single-guide {
+        margin: 6.25em 220px 5px 220px;
+        display: flex;
+        flex-direction: column;
+        gap:40px;
+        align-items: center;
+
+        img {
+            max-width: 800px;
+            max-height: 500px;
+            border-radius: 5px;
+        }
+
+        p {
+            padding: 0px;
+        }
+
+        h3 {
+            color: #111;
+            font-weight: 600;
+            display: block;
+            font-size: 22px;
+            margin: auto;
+
+        }
+    }
+}
+
+.img-lg {
+   max-width: 100%;
+}
