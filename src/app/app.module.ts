@@ -11,6 +11,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ToursComponent } from './home/tours/tours.component';
 import { HotelsComponent } from './home/hotels/hotels.component';
 import { AccomodationComponent } from './home/accomodation/accomodation.component';
+import { SwiperModule } from 'swiper/angular';
+
 
 
 const appRoutes: Routes = [
@@ -38,10 +40,9 @@ const appRoutes: Routes = [
     MatIconModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes, { enableTracing: true }),
-    
-    
-    
+    SwiperModule
    
+     
   ],
   providers: [],
   bootstrap: [AppComponent]
