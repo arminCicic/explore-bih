@@ -6,7 +6,7 @@
       <mat-icon (click)="toggleBtn()" class="icon">{{ showMenu ? 'menu' : 'close' }}</mat-icon>
     </div>
     <!-- LOGO -->
-      <a  href="/" title="Santorini View">
+      <a  routerLink="/home" title="Santorini View">
           <picture>
               <source media="(max-width: 640px)" srcset="../../../assets/images/bih-view-small.png">
               <img src="../../../assets/images/bih-view.png" alt="Santorini View">
@@ -18,10 +18,10 @@
    <ul>
     <a routerLink="/tours">Tours & Cruises</a>
     <a routerLink="/accomodation">Accomodation</a>
-    <a href="/">What to do</a>
-    <a href="/">Plan</a>
-    <a href="/">Map</a>
-    <a href="/">Contact</a>
+    <a routerLink="/what-to-do">What to do</a>
+    <a>Plan</a>
+    <a>Map</a>
+    <a>Contact</a>
    </ul>
 
    <!-- Navbar Icons -->

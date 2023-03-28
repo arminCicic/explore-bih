@@ -1,11 +1,8 @@
-import { AfterViewInit, Component, OnInit, ViewEncapsulation} from '@angular/core';
-
-import SwiperCore, {Autoplay, Pagination, Navigation, SwiperOptions } from "swiper";
+import { AfterViewInit, Component, ViewEncapsulation} from '@angular/core';
+import SwiperCore, {Autoplay, Pagination, Navigation } from "swiper";
 import Swiper from "swiper";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
-
-
-
+import { ACCOMODATIONS } from '../../../assets/data/articles';
 
 
 
@@ -18,11 +15,11 @@ SwiperCore.use([Autoplay, Pagination, Navigation]);
 })
 
 
-
 export class AccomodationComponent implements AfterViewInit{  
-
+  
   swiper: Swiper | undefined;
 
+  accommodations =  ACCOMODATIONS;
  
 
   ngAfterViewInit() {
@@ -32,22 +29,19 @@ export class AccomodationComponent implements AfterViewInit{
       loop: true,
 
       autoplay: {
-        delay: 2000, // time between each slide in milliseconds
-        disableOnInteraction: false // prevent autoplay when user interacts with swiper
+        delay: 3000, 
+        disableOnInteraction: false 
       },
-
-      // If we need pagination
+      
       pagination: {
         el: '.swiper-pagination',
       },
-
-      // Navigation arrows
+      
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
 
-      // And if we need scrollbar
       scrollbar: {
         el: '.swiper-scrollbar',
       },

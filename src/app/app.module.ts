@@ -12,12 +12,16 @@ import { ToursComponent } from './home/tours/tours.component';
 import { HotelsComponent } from './home/hotels/hotels.component';
 import { AccomodationComponent } from './home/accomodation/accomodation.component';
 import { SwiperModule } from 'swiper/angular';
+import { WhatToDoComponent } from './what-to-do/what-to-do.component';
+import { ModalComponent } from './modal/modal.component';
+
 
 
 
 const appRoutes: Routes = [
   { path: 'tours', component: ToursComponent },
   { path: 'accomodation', component: AccomodationComponent },
+  { path: 'what-to-do', component: WhatToDoComponent },
     { path: 'home', component: HomeComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: '**', redirectTo: 'home' }
@@ -33,7 +37,10 @@ const appRoutes: Routes = [
     FooterComponent,
     ToursComponent,
     HotelsComponent,
-    AccomodationComponent
+    AccomodationComponent,
+    WhatToDoComponent,
+    ModalComponent,
+   
   ],
   imports: [
     BrowserModule,

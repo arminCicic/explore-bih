@@ -6,6 +6,15 @@ export interface Article {
     imageUrl: string;
   }
   
+
+ export interface Accomodation {
+    image: string;
+    title: string;
+    description: string;
+    text: string;
+  }
+
+
   export const ARTICLES: Article[] = [
     {
       title: '1. Old Bridge (Stari Most)',
@@ -65,4 +74,46 @@ export interface Article {
       }
     
   ];
+
+
+    
+  export const ACCOMODATIONS: Accomodation[] = [
+    {
+      image: "../../../assets/images/tours1.jpg",
+      title: "A beautiful place to stay",
+      description: "ACCOMODATION",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      image: "../../../assets/images/tours1.jpg",
+      title: "A beautiful place to stay",
+      description: "ACCOMODATION",
+      text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      image: "../../../assets/images/tours1.jpg",
+      title: "A beautiful place to stay",
+      description: "ACCOMODATION",
+      text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      image: "../../../assets/images/tours1.jpg",
+      title: "A modern urban oasis",
+      description: "ACCOMODATION",
+      text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+      image: "../../../assets/images/tours1.jpg",
+      title: "A rustic farmhouse",
+      description: "ACCOMODATION",
+      text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      image: "../../../assets/images/tours1.jpg",
+      title: "A luxurious villa",
+      description: "ACCOMODATION",
+      text: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni."
+    }
+  ];
+  
   
