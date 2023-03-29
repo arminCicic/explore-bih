@@ -1,9 +1,23 @@
-<iframe
-  width="600"
-  height="450"
-  style="border:0"
-  loading="lazy"
-  allowfullscreen
-  referrerpolicy="no-referrer-when-downgrade"
-  [src]="url">
-</iframe>
+<div class="locations-container">
+  <ul>
+    <li *ngFor="let location of locations; let i = index;">
+      <button (click)="changeLocation(i)">{{location.name}}</button>
+    </li>
+  </ul>
+
+  <iframe
+    width="600"
+    height="450"
+    style="border:0"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"
+    [src]="url">
+  </iframe>
+
+</div>
+
+
+
+
+
