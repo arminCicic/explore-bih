@@ -1,7 +1,9 @@
-<div class="modal-overlay">
-  
+<div class="modal-overlay" (click)="onOverlayClick($event)">
+        
+        <button type="button" (click)="closeModal()"><i class="fa-solid fa-xmark"></i></button>
 
-        <video src="../../assets/videos/buna-canal.mp4" controls autoplay></video>
+
+        <video src={{videoUrl}} controls autoplay></video>
   
 
 </div>

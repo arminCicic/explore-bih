@@ -7,13 +7,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WhatToDoComponent implements OnInit {
 
-  showModal = true;
+  showModal = false; 
 
- 
+  videoUrl = "";
+  
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  onCloseModal() {
+    this.showModal = false;
+  }
+
+  
+  openModal(id: number) {
+    const videoUrls: { [key: number]: string } = {
+      1: '../../assets/videos/trebinje.mp4',
+      2: '../../assets/videos/buna-canal.mp4',
+      3: '../../assets/videos/trebinje.mp4',
+    };
+  
+    this.videoUrl = videoUrls[id];
+    this.showModal = true;
+  }
+  
+  
+
 
 }

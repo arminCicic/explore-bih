@@ -15,7 +15,7 @@
         the middle of the cobalt Aegean Sea. Choose your ideal spot and let the mesmerizing 
         view amaze you.
         <div class="btn-wrapper">
-            <button>Watch Fullscreen</button>
+            <button (click)="openModal(1)">Watch Fullscreen</button>
         </div>
     </div>
    
@@ -36,15 +36,15 @@
         the middle of the cobalt Aegean Sea. Choose your ideal spot and let the mesmerizing 
         view amaze you.
         <div class="btn-wrapper">
-            <button>Watch</button>
+            <button (click)="openModal(2)">Watch Fullscreen</button>
         </div>
     </div>
-    <video src="../../assets/videos/buna-canal.mp4" controls autoplay class="element-order2"></video>
-<app-modal *ngIf="true"></app-modal>
+    <video src="../../assets/videos/buna-canal.mp4" controls class="element-order2"></video>
+<!-- <app-modal *ngIf="showModal" (close)="onCloseModal()"></app-modal> -->
 </div>
 
 <div class="video">
-    <video src="../../assets/videos/trebinje.mp4" controls autoplay></video>
+    <video src="../../assets/videos/trebinje.mp4" controls ></video>
     <div class="video-dsc">
         <p>Trebinje</p>
         Fira, the stunning capital of Santorini, is the place to be! It is the heart of 
@@ -54,8 +54,10 @@
         the middle of the cobalt Aegean Sea. Choose your ideal spot and let the mesmerizing 
         view amaze you.
         <div class="btn-wrapper">
-            <button>Watch</button>
+            <button (click)="openModal(3)">Watch Fullscreen</button>
         </div>
     </div>
 
 </div>
+
+<app-modal *ngIf="showModal" (close)="onCloseModal()" [videoUrl]="videoUrl"></app-modal>
