@@ -2,12 +2,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
+    padding: 7px 10px 7px;
 
     .menu-wrapper {      
             display: flex;
             align-items: center;
             gap: 10px; 
+
+            .menu {
+                padding-top: 9px;
+            }
 
             img {
                 height: 40px;
@@ -16,8 +20,15 @@
             .icon {
                 cursor: pointer;
             }
-    }
 
+            
+        }
+        
+        .navbar-icons {
+            .icons-top {
+             padding-top: 7px;
+            }
+        }
    
     @media (max-width: 640px) {
         img {
@@ -26,7 +37,7 @@
        
     }
 
-    @media (min-width: 640px) {
+    @media (min-width: 1020px) {
         .menu {
             display: none;
         }
@@ -46,9 +57,13 @@
             color: #000;
             text-decoration: none;
         }
+
+        a:hover {
+            opacity: 0.7;            
+        }
     }
 
-    @media (max-width: 1150px) {
+    @media (max-width: 1020px) {
         ul {
             display: none;
         } 
@@ -73,7 +88,71 @@
         }
 
 }
+
+.dropdown-menu {
+    position: absolute;
+    top: 6%;
+    left: 0;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    gap: 15px;
+
+    a {
+        text-decoration: none;
+        color: #000;
+
+    }
+
+    a:hover {
+        cursor: pointer;
+        opacity: 0.7;       
+    }
 }
+
+@media (min-width: 1020px) {
+    .dropdown-menu {
+        display: none;
+    }
+
+}
+
+.currency-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 9999;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fcfcfc;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+
+        img {
+            height: 17px;
+            width: 18px;
+        }
+    }
+    
+}
+ }
+
+
+
+
 
 
 

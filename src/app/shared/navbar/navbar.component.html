@@ -3,7 +3,7 @@
   <div class="menu-wrapper">
     <!-- Hamburger menu -->
     <div class="menu">
-      <mat-icon (click)="toggleBtn()" class="icon">{{ showMenu ? 'menu' : 'close' }}</mat-icon>
+      <mat-icon (click)="toggleBtn()" class="icon">{{ showMenu ? 'close' : 'menu' }}</mat-icon>
     </div>
     <!-- LOGO -->
       <a  routerLink="/home" title="Santorini View">
@@ -28,18 +28,40 @@
    <div class="navbar-icons">
     <div>
       <a href="#">
-        <mat-icon>search</mat-icon>
+        <mat-icon class="icons-top">search</mat-icon>
       </a>
     </div>
-    <div class="currency">
+    <div class="currency icons-top">
       US$
     </div>
     <div>
       <a href="#">
-        <mat-icon>account_circle</mat-icon>
+        <mat-icon class="icons-top">account_circle</mat-icon>
       </a>
     </div>
     
   </div>
+
+  <!-- Dropdown menu -->
+
+  <div class="dropdown-menu" *ngIf="showMenu">
+    <a >Home</a>
+    <a routerLink="/tours">Tours & Cruises</a>
+    <a routerLink="/accomodation">Accomodation</a>
+    <a routerLink="/what-to-do">What to do</a>
+    <a routerLink="/map">Map</a>
+    <a routerLink="/contact">Contact</a>
+  </div>
+
+
+  <!-- Currency dropdown-menu -->
+  <div class="currency-dropdown">   
+    <ul>
+      <li> <img src="../../../assets/images/us-bg.svg"> USD (US$)</li>
+      <li> <img src="../../../assets/images/bg-bih.png"> BiH (BAM)</li>
+    </ul>
+  </div>
   
 </div>
+
+

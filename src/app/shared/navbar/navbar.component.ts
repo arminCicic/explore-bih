@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  showMenu = true;
+  menuIcon = true;
+  showMenu = false;
 
   constructor() { }
 
@@ -15,7 +16,8 @@ export class NavbarComponent implements OnInit {
   }
 
   toggleBtn () {
-    this.showMenu = !this.showMenu
+    this.menuIcon = !this.menuIcon;
+    this.showMenu = !this.showMenu;
   }
 
 }
