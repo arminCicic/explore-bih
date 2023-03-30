@@ -31,8 +31,8 @@
         <mat-icon class="icons-top">search</mat-icon>
       </a>
     </div>
-    <div class="currency icons-top">
-      US$
+    <div (click)="onCurrencyClick()" class="currency icons-top">
+      {{ selectedCurrency }}
     </div>
     <div>
       <a href="#">
@@ -54,13 +54,15 @@
   </div>
 
 
-  <!-- Currency dropdown-menu -->
-  <div class="currency-dropdown">   
+
+  
+  <div class="currency-dropdown" *ngIf="showDropdown">
     <ul>
-      <li> <img src="../../../assets/images/us-bg.svg"> USD (US$)</li>
-      <li> <img src="../../../assets/images/bg-bih.png"> BiH (BAM)</li>
+      <li (click)="changeCurrency('USD')"> <img src="../../../assets/images/us-bg.svg"> USD (US$)</li>
+      <li (click)="changeCurrency('BAM')"> <img src="../../../assets/images/bg-bih.png"> BiH (BAM)</li>
     </ul>
   </div>
+  
   
 </div>
 

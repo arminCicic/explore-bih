@@ -1,23 +1,54 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
 
+export class NavbarComponent implements OnInit {
   menuIcon = true;
   showMenu = false;
+  showDropdown = true;
+  
+  public selectedCurrency: string = 'USD';
 
-  constructor() { }
+  @HostListener('document:click', ['$event'])
+  onClick(event: { target: any; }) {
+    if (!this.isClickInside(event.target)) {
+      console.log(event.target)
+      this.showDropdown = false;
+    }
+  }
+  
+  isClickInside(target: any): boolean {
+    const currencyElement = document.querySelector('.currency');
+    const dropdownElement = document.querySelector('.currency-dropdown');
+    return (currencyElement !== null && currencyElement.contains(target)) || (dropdownElement !== null && dropdownElement.contains(target));
+  }
+  
 
-  ngOnInit(): void {
+  constructor() {}
+
+  ngOnInit() {}
+ 
+  changeCurrency(currency: string) {
+    this.selectedCurrency = currency;
+    this.toggleCurrency();
   }
 
-  toggleBtn () {
+  toggleCurrency() {
+    this.showDropdown = !this.showDropdown;
+  }
+
+  onCurrencyClick() {
+    this.showDropdown = true;
+  }
+
+
+  toggleBtn() {
     this.menuIcon = !this.menuIcon;
     this.showMenu = !this.showMenu;
   }
-
 }
+
