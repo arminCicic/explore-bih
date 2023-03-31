@@ -14,6 +14,12 @@ export interface Article {
     text: string;
   }
 
+  export interface Rivers {
+    image: string;
+    title: string;
+    id: number;
+  }
+
 
   export const ARTICLES: Article[] = [
     {
@@ -79,41 +85,85 @@ export interface Article {
     
   export const ACCOMODATIONS: Accomodation[] = [
     {
-      image: "../../../assets/images/tours1.jpg",
-      title: "A beautiful place to stay",
+      image: "../../../assets/images/boracko.jpg",
+      title: "Boracko Lake House",
       description: "ACCOMODATION",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      text: "A peaceful retreat surrounded by dense forests and crystal-clear waters, perfect for nature lovers."
     },
     {
-      image: "../../../assets/images/tours1.jpg",
-      title: "A beautiful place to stay",
+      image: "../../../assets/images/medjugorje.jpg",
+      title: "Ethnic village of Medjugorje",
       description: "ACCOMODATION",
-      text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      text: "A charming bed and breakfast in the heart of Bosnia's wine country, offering cozy rooms and traditional Bosnian breakfast"
     },
     {
-      image: "../../../assets/images/tours1.jpg",
-      title: "A beautiful place to stay",
+      image: "../../../assets/images/pocitelj.webp",
+      title: "Medieval Pocitelj",
       description: "ACCOMODATION",
-      text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      text: "A medieval castle converted into a luxurious guesthouse with stunning views of the surrounding countryside"
     },
     {
-      image: "../../../assets/images/tours1.jpg",
-      title: "A modern urban oasis",
+      image: "../../../assets/images/una-stay.jpg",
+      title: "Una National Park",
       description: "ACCOMODATION",
-      text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      text: "A chalet in the heart of Una National Park, offering easy access to outdoor activities and stunning views"
     },
     {
-      image: "../../../assets/images/tours1.jpg",
-      title: "A rustic farmhouse",
+      image: "../../../assets/images/vrelo-bosne.jpg",
+      title: "Bosnia Spring Lodge",
       description: "ACCOMODATION",
-      text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      text: "A unique stay just outside Sarajevo, offering luxurious rooms, a swimming pool, and stunning gardens."
     },
     {
-      image: "../../../assets/images/tours1.jpg",
-      title: "A luxurious villa",
+      image: "../../../assets/images/japodski-otoci.jpg",
+      title: "Japod Islands",
       description: "ACCOMODATION",
-      text: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni."
+      text: "Glamping Japodski Otoci offers luxurious tents, outdoor hot tubs, stunning views, and outdoor activities like hiking and kayaking in the Velebit Mountain range."
     }
+  ];
+
+  export const RIVERS: Rivers[] = [
+    {
+      image: "../../../assets/images/bosna-river.jpg",
+      title: "Bosna",     
+      id: 1,
+    },
+    {
+      image: "../../../assets/images/river-drina.jpg",
+      title: "Drina",       
+      id: 2,
+    },
+    {
+      image: "../../../assets/images/river-neretva.jpg",
+      title: "Neretva",    
+      id: 3,
+    },
+    {
+      image: "../../../assets/images/river-sava.jpg",
+      title: "Sava",     
+      id: 4,
+    },
+    {
+      image: "../../../assets/images/river-sana.jpg",
+      title: "Sana",     
+      id: 5,
+    },
+    {
+      image: "../../../assets/images/river-tara.jpg",
+      title: "Tara",     
+      id: 6,
+    },
+    {
+      image: "../../../assets/images/river-trebisnjica.jpg",
+      title: "Trebisnjica",     
+      id: 7,
+    },
+    {
+      image: "../../../assets/images/river-una.jpg",
+      title: "Una",     
+      id: 8,
+    },
+  
   ];
   
   

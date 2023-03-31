@@ -1,0 +1,33 @@
+<div class="panorama">
+    <div class="title">
+       <p>Beautiful rivers of Bosnia and Herzegovina</p>     
+    </div>
+</div>
+
+<div class="rivers-dsc">
+    <p>Bosnia and Herzegovina's rivers are a sight to behold, flowing through some of the most beautiful and 
+        rugged terrain in Europe. The country is home to a number of rivers that offer exceptional opportunities 
+        for outdoor adventure, such as rafting and kayaking. <br>         
+        <br>In addition to rafting and kayaking, Bosnia and Herzegovina's rivers offer many opportunities for
+         sightseeing and exploration. Along the banks of the Neretva River, you can visit the historic city of Mostar,
+          home to the famous bridge that spans the river and its charming old town. Meanwhile, the Una River is 
+          surrounded by the Una National Park, which offers excellent hiking trails and scenic viewpoints.
+
+        Whether you're an experienced adventurer or simply looking for a beautiful natural landscape to explore, 
+        Bosnia and Herzegovina's rivers are sure to impress. With their crystal-clear waters, stunning scenery, 
+        and exciting outdoor activities, the country's rivers offer a wealth of beauty and adventure that is
+         not to be missed.</p>
+</div>
+
+<div class="rivers-container">
+    <div *ngFor="let river of rivers" class="river-item" (click)="openModal(river.id)">
+        <img src="{{river.image}}">       
+          <p>{{river.title}}</p>          
+          <i class="fa-solid fa-angle-right"></i>
+        </div> 
+    </div>
+    
+    <div class="river-modal-overlay" *ngIf="showModal" (click)="onCloseModal()">
+        <img src="{{selectedRiver.image}}" class="full-screen-img"> 
+               
+    </div>

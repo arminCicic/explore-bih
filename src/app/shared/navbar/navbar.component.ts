@@ -9,14 +9,14 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   menuIcon = true;
   showMenu = false;
-  showDropdown = true;
+  showDropdown = false;
   
   public selectedCurrency: string = 'USD';
 
   @HostListener('document:click', ['$event'])
   onClick(event: { target: any; }) {
     if (!this.isClickInside(event.target)) {
-      console.log(event.target)
+     
       this.showDropdown = false;
     }
   }

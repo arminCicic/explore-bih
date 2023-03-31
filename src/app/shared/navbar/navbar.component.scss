@@ -3,6 +3,11 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 7px 10px 7px;
+    position: fixed;
+    background-color: #fcfcfc;
+    width: 100%;
+    z-index: 9999;
+    top:0;
 
     .menu-wrapper {      
             display: flex;

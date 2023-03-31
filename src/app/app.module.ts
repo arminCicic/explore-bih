@@ -12,10 +12,11 @@ import { ToursComponent } from './home/tours/tours.component';
 import { HotelsComponent } from './home/hotels/hotels.component';
 import { AccomodationComponent } from './home/accomodation/accomodation.component';
 import { SwiperModule } from 'swiper/angular';
-import { WhatToDoComponent } from './what-to-do/what-to-do.component';
+import { WhatToDoComponent } from './home/what-to-do/what-to-do.component';
 import { ModalComponent } from './modal/modal.component';
 import { MapComponent } from './home/map/map.component';
 import { ContactComponent } from './home/contact/contact.component';
+import { RiversComponent } from './home/rivers/rivers.component';
 
 
 
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
   { path: 'what-to-do', component: WhatToDoComponent },
   { path: 'map', component: MapComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'rivers', component: RiversComponent },
     { path: 'home', component: HomeComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: '**', redirectTo: 'home' }
@@ -46,6 +48,7 @@ const appRoutes: Routes = [
     ModalComponent,
     MapComponent,
     ContactComponent,
+    RiversComponent,
   
    
   ],
