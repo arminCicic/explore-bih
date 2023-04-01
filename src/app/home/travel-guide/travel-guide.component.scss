@@ -29,6 +29,7 @@
       display: flex;
       width: 100%;
       gap: 10px;
+      flex-wrap: wrap;
   
       .col {
         position: relative;
@@ -36,7 +37,6 @@
         padding: 10px;
         text-align: center;
         border-radius: 5px;
-        background-image: url(../../../assets/images/guide1.jpeg);
         min-height: 200px;
         background-size: cover;
         background-position: center;  
@@ -50,6 +50,7 @@
             bottom: 0;
             right: 0;
             width: 100%;
+          
            
 
             .bottom-title {
@@ -61,7 +62,7 @@
                 color: #fff;   
                 font-size: 1.7rem;
                 padding-right: 35px;
-                font-weight: 300;
+                font-weight: 400;
                 border-radius: 5px;
                 
                
@@ -91,31 +92,45 @@
       }
     }
 
-    .row:first-child  {
-        .col:nth-child(2) {
-            background-image: url(../../../assets/images/guide2.jpg);
-        }
-
-        .col:nth-child(3) {
-            background-image: url(../../../assets/images/guide3.jpeg);
-        }
-      }
+   
 
       .row:nth-child(2) {
         .col:first-child {
-            background-image: url(../../../assets/images/guide4.jpeg);
+          background-image: url(../../../assets/images/bih.avif);
         }
 
         .col:nth-child(2) {
-            background-image: url(../../../assets/images/guide5.jpeg); 
+            background-image: url(../../../assets/images/hotel.avif); 
         }
+
+        .col:nth-child(3) {
+          background-image: url(../../../assets/images/airplane.avif); 
+      }
       }
 
       .row:nth-child(4) {
         .col:last-child {
-          background-image: url(../../../assets/images/guide6.jpeg); 
+          background-image: url(../../../assets/images/road.avif); 
         }
       }
+
+    .row:nth-child(3)  {
+      .col:nth-child(1) {
+        background-image: url(../../../assets/images/activities.webp);
+      }
+
+      .col:nth-child(2) {
+        background-image: url(../../../assets/images/restaurant.avif);
+      }
+
+      .col:nth-child(3) {
+        background-image: url(../../../assets/images/map.avif);
+      }
+    }
+
+    .row:nth-child(4) .col:nth-child(1) {
+      background-image: url(../../../assets/images/summer-city.jpg);
+    }
 
       
 
@@ -124,6 +139,17 @@
   @media (max-width: 1200px) {
     .flex-container {
       margin: 0.3125rem 2.25rem;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .flex-container{
+      .row {
+        .col {
+          flex: 1 1 200px;
+        }
+      }
+
     }
   }
   

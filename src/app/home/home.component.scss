@@ -301,6 +301,12 @@
             font-size: 2em;
             color: #1c7ece;
         }
+
+        @media (max-width: 800px) {
+            .who-we-are {
+                padding-top: 220px;
+            }
+        }
     }
 
 }
