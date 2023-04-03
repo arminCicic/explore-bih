@@ -37,12 +37,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 15%;
+        height: 12%;
+        margin-top: 5px;
 
 
         img {
              width: 100px;
              padding-bottom: 5px;
+             margin-left: 5px;
         }
     }
 
@@ -66,7 +68,7 @@
 
 
     .footer-bottom {
-        height: 10%;
+        height: 5vh;
     }
 }
 

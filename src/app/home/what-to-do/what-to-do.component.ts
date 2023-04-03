@@ -26,7 +26,8 @@ export class WhatToDoComponent implements OnInit {
     const videoUrls: { [key: number]: string } = {
       1: '../../assets/videos/trebinje.mp4',
       2: '../../assets/videos/buna-canal.mp4',
-      3: '../../assets/videos/trebinje.mp4',
+      3: '../../assets/videos/jahorina.mp4',
+      4: '../../assets/videos/livno.mp4'
     };
   
     this.videoUrl = videoUrls[id];

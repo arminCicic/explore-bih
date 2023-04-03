@@ -1,15 +1,18 @@
 <div class="accomodation-img">
     <p>Accomodation</p>
     <div class="accomodation-title">
-      Here are the top 6 unique stays in Bosnia and Herzegovina - This beautiful country boasts an array of unique accommodation options that perfectly complement its stunning natural landscapes and rich cultural heritage. From historic castles to cozy mountain lodges, there is something for everyone.
+      Here are the top 6 unique stays in Bosnia and Herzegovina - This beautiful 
+      country boasts an array of unique accommodation options that perfectly 
+      complement its stunning natural landscapes and rich cultural heritage. 
+      From historic castles to cozy mountain lodges, there is something for everyone.
     </div>
 </div>  
 
 <div class="locations-container">
-  <div *ngFor="let accommodation of accommodations" class="location-item">
+  <div *ngFor="let accommodation of accommodations; let i = index;" class="location-item">
     <img src="{{accommodation.image}}">
     <div class="location-dsc">
-      <h4>{{accommodation.title}}</h4>
+      <h4 (click)="changeLocation(i)">{{accommodation.title}}</h4>
       <p class="dsc">{{accommodation.description}}</p>
       <p>{{accommodation.text}}</p>
     </div>
@@ -17,7 +20,7 @@
 </div>
 
 
-<div class="carousel">
+<!-- <div class="carousel">
 
   <div class="swiper">
    
@@ -38,4 +41,24 @@
   
     <div class="swiper-scrollbar"></div>
   </div>
+</div> -->
+
+
+<div id="scroll-to" #scrollTo class="maps-container">
+  <!-- <ul>
+    <li *ngFor="let location of locations; let i = index;">
+      <button (click)="changeLocation(i)">{{location.name}}</button>
+    </li>
+  </ul> -->
+
+  <iframe
+    width="600"
+    height="450"
+    style="border:0"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"
+    [src]="url">
+  </iframe>
+
 </div>

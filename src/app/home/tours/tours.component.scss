@@ -72,3 +72,16 @@
 .img-lg {
    max-width: 100%;
 }
+
+
+@media (max-width: 860px) {
+    .guide {
+        .single-guide {
+            margin: 40px 0px 10px 0px;          
+
+            p {
+                margin-right: 0px;
+            }
+        }
+    }
+}

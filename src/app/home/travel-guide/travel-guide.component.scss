@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0.3125rem 6.25rem;
+    margin: 2.5rem 6.25rem;
     gap: 10px;
 
        
@@ -136,20 +136,14 @@
 
   }
 
-  @media (max-width: 1200px) {
-    .flex-container {
-      margin: 0.3125rem 2.25rem;
-    }
-  }
-
   @media (max-width: 760px) {
     .flex-container{
+
       .row {
         .col {
           flex: 1 1 200px;
         }
       }
-
     }
   }
   

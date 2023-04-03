@@ -16,8 +16,11 @@ export class NavbarComponent implements OnInit {
   @HostListener('document:click', ['$event'])
   onClick(event: { target: any; }) {
     if (!this.isClickInside(event.target)) {
-     
       this.showDropdown = false;
+    }
+
+    if (!this.isMenuClickInside(event.target)) {
+      this.showMenu = false;
     }
   }
   
@@ -26,7 +29,12 @@ export class NavbarComponent implements OnInit {
     const dropdownElement = document.querySelector('.currency-dropdown');
     return (currencyElement !== null && currencyElement.contains(target)) || (dropdownElement !== null && dropdownElement.contains(target));
   }
-  
+
+  isMenuClickInside(target: any): boolean {
+    const menuElement = document.querySelector('.dropdown-menu');
+    const menuIconElement = document.querySelector('.menu');
+    return (menuElement !== null && menuElement.contains(target)) || (menuIconElement !== null && menuIconElement.contains(target));
+  }
 
   constructor() {}
 
@@ -45,10 +53,8 @@ export class NavbarComponent implements OnInit {
     this.showDropdown = true;
   }
 
-
   toggleBtn() {
     this.menuIcon = !this.menuIcon;
     this.showMenu = !this.showMenu;
   }
 }
-

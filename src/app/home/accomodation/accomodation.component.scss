@@ -38,7 +38,7 @@
 }
 
 .locations-container {
-  margin: 50px 163px 10px 163px;
+  margin: 5vh 10.7vw 2vh 10.7vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;  
@@ -59,6 +59,7 @@
 
     h4 {
       font-weight: 700;
+      cursor: pointer;
       
     }
 
@@ -72,6 +73,17 @@
     }
 
 
+  }
+}
+
+.maps-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  iframe {
+    width: 80vw;
+        height: 72vh;
+        margin-bottom: 20px;
   }
 }
 
@@ -99,6 +111,14 @@
       }
     }
      }
+
+     .accomodation-img {
+       .accomodation-title {
+        font-size: 18px;
+       }
+
+     }
+
 
 }
 
