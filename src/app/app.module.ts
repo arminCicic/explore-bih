@@ -14,9 +14,9 @@ import { AccomodationComponent } from './home/accomodation/accomodation.componen
 import { SwiperModule } from 'swiper/angular';
 import { WhatToDoComponent } from './home/what-to-do/what-to-do.component';
 import { ModalComponent } from './modal/modal.component';
-import { MapComponent } from './home/map/map.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { RiversComponent } from './home/rivers/rivers.component';
+import { TransfersComponent } from './home/transfers/transfers.component';
 
 
 
@@ -25,9 +25,9 @@ const appRoutes: Routes = [
   { path: 'tours', component: ToursComponent },
   { path: 'accomodation', component: AccomodationComponent },
   { path: 'what-to-do', component: WhatToDoComponent },
-  { path: 'map', component: MapComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'rivers', component: RiversComponent },
+  { path: 'transfers', component: TransfersComponent },
     { path: 'home', component: HomeComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: '**', redirectTo: 'home' }
@@ -46,9 +46,9 @@ const appRoutes: Routes = [
     AccomodationComponent,
     WhatToDoComponent,
     ModalComponent,
-    MapComponent,
     ContactComponent,
     RiversComponent,
+    TransfersComponent,
   
    
   ],

@@ -27,6 +27,11 @@ export class AccomodationComponent implements AfterViewInit{
   swiper: Swiper | undefined;
 
   accommodations =  ACCOMODATIONS;
+
+  isCarousel = false;
+
+
+  
  
 
   ngAfterViewInit() {
@@ -53,6 +58,9 @@ export class AccomodationComponent implements AfterViewInit{
         el: '.swiper-scrollbar',
       },
     });
+
+   
+   
   }
 
  
@@ -73,6 +81,20 @@ export class AccomodationComponent implements AfterViewInit{
     const element = this.scrollTo.nativeElement;
   element.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
+
+  openCarousel() {   
+      this.isCarousel = true;    
+  }
+  
+  
+
+  closeCarousel(event: MouseEvent): void {
+    const target = event.target as HTMLElement;
+    if (!target.closest('.swiper')) {
+      this.isCarousel = false;
+    }
+  }
+  
 
 
 }

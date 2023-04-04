@@ -1,0 +1,136 @@
+.transfers-container {
+    background-image: url("../../../assets/images/airplane.avif");
+    background-size: cover;
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    opacity: 0.9;
+    margin-top: -180px;
+
+
+    .text-container {
+        position: absolute;
+        left: 5%;
+        top: 43%;
+        max-width: 40vw;
+        color: #fff;
+
+        span {
+        font-size: 19px;
+        font-weight: 300;
+       
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: -.9px;
+            
+        }
+
+        div {
+            max-width: 850px;
+            margin: 30px auto;
+            text-align: left;
+            font-size: 18px;
+            line-height: 28px;
+            padding: 0;
+            color: #fff;
+        }
+    }
+
+}
+
+@media (max-width: 1280px) {
+    .transfers-container {
+        .text-container {
+            max-width: 70vw;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .transfers-container {
+        .text-container {
+            max-width: 100vw;
+
+            h1 {
+                font-size: 26px;
+                margin-top: 3px;
+            }
+    
+            div {
+                 font-size: 17px;
+                
+            }
+        }
+    }
+}
+
+.questions-box {
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    padding: 5% 11% 5%;
+    background: #fafafa;
+    width: 100%;
+
+    h3 {
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .single-question {
+        border-bottom: 1px solid #eaeaea;
+        box-shadow: 0 2px 5px rgba(0,0,0,.1);
+        background: #fff;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        h5 {
+           padding-bottom: 20px;
+        }
+
+        .material-symbols-outlined {
+            position: absolute;
+            right: 2%;
+            top: 2%;
+            font-size: 58px;
+            color: #999;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .questions-box {
+        padding: 5% 0% 5% 0%;
+
+        .single-question {
+            h5 {
+              font-size: 17px;
+             
+                
+            }
+
+        }
+        
+    }
+}
+
+
+
+@media (max-width: 760px) {
+    .questions-box {
+                .single-question {
+                    h5 {         
+                     max-width: 320px;                
+                }
+            }
+}
+}
