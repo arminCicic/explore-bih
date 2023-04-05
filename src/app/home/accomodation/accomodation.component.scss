@@ -50,6 +50,7 @@
     flex-direction: row;
     width: calc(50% - 10px);
     gap: 15px;
+    cursor: pointer;
 
     img {
       min-width: 230px;
@@ -59,8 +60,7 @@
 
     h4 {
       font-weight: 700;
-      cursor: pointer;
-      
+           
     }
 
     .dsc {

@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, ElementRef, ViewEncapsulation, ViewChild } from '@angular/core';
-import SwiperCore, {Autoplay, Pagination, Navigation } from "swiper";
-import Swiper from "swiper";
-SwiperCore.use([Autoplay, Pagination, Navigation]);
+// import SwiperCore, {Autoplay, Pagination, Navigation } from "swiper";
+// import Swiper from "swiper";
+// SwiperCore.use([Autoplay, Pagination, Navigation]);
 import { ACCOMODATIONS } from '../../../assets/data/articles';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
@@ -24,7 +24,7 @@ export class AccomodationComponent implements AfterViewInit{
   apiKey = "AIzaSyBbpucpFe_SpT0suMgubOt_gI4EvaZrthE";
   url!: SafeResourceUrl;
   
-  swiper: Swiper | undefined;
+  // swiper: Swiper | undefined;
 
   accommodations =  ACCOMODATIONS;
 
@@ -35,34 +35,31 @@ export class AccomodationComponent implements AfterViewInit{
  
 
   ngAfterViewInit() {
-    this.swiper = new Swiper('.swiper', {
+    // this.swiper = new Swiper('.swiper', {
      
-      direction: 'horizontal',
-      loop: true,
+    //   direction: 'horizontal',
+    //   loop: true,
 
-      autoplay: {
-        delay: 3000, 
-        disableOnInteraction: false 
-      },
+    //   autoplay: {
+    //     delay: 3000, 
+    //     disableOnInteraction: false 
+    //   },
       
-      pagination: {
-        el: '.swiper-pagination',
-      },
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //   },
       
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+    //   navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    //   },
 
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-    });
-
-   
+    //   scrollbar: {
+    //     el: '.swiper-scrollbar',
+    //   },
+    // });   
    
   }
-
  
 
   constructor(private sanitizer: DomSanitizer) { }

@@ -2,8 +2,10 @@
 
   <div class="menu-wrapper">
     <!-- Hamburger menu -->
-    <div class="menu">
-      <mat-icon (click)="toggleBtn()" class="icon">{{ showMenu ? 'close' : 'menu' }}</mat-icon>
+    <div class="menu">     
+     
+      <i  class="icon icons-top fa-solid {{showMenu ? 'fa-xmark' : 'fa-bars'}} fa-bars" (click)="toggleBtn()"></i>     
+
     </div>
     <!-- LOGO -->
       <a  routerLink="/home" title="Santorini View">
@@ -28,7 +30,8 @@
    <div class="navbar-icons">
     <div>
       <a href="#">
-        <mat-icon class="icons-top">search</mat-icon>
+        <!-- <mat-icon class="icons-top">search</mat-icon> -->
+        <i class="icons-top fa-solid fa-magnifying-glass"></i>
       </a>
     </div>
     <div (click)="toggleCurrency()" class="currency icons-top">
@@ -36,7 +39,8 @@
     </div>
     <div>
       <a href="#">
-        <mat-icon class="icons-top">account_circle</mat-icon>
+        <!-- <mat-icon class="icons-top">account_circle</mat-icon> -->
+        <i class="icons-top fa-regular fa-user"></i>
       </a>
     </div>
     
