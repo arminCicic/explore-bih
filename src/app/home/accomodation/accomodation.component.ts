@@ -24,7 +24,7 @@ export class AccomodationComponent implements AfterViewInit{
 
   @ViewChild('scrollTo') scrollTo!: ElementRef;
 
-  // apiKey = "AIzaSyBbpucpFe_SpT0suMgubOt_gI4EvaZrthE";
+  
   apiKey = environment.envVar.apiKey;
 
 
