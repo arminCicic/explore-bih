@@ -4,10 +4,7 @@ import { AfterViewInit, Component, ElementRef, ViewEncapsulation, ViewChild } fr
 // SwiperCore.use([Autoplay, Pagination, Navigation]);
 import { ACCOMODATIONS } from '../../../assets/data/articles';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { environment } from '../../../environments/environment.develop';
-
-
-
+import { environment } from 'src/environments/environment';
 
 
 
@@ -24,7 +21,8 @@ export class AccomodationComponent implements AfterViewInit{
 
   @ViewChild('scrollTo') scrollTo!: ElementRef;
 
-  
+ 
+
   apiKey = environment.envVar.apiKey;
 
 

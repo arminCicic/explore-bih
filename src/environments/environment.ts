@@ -7,8 +7,10 @@
 
 
 export const environment = {
-  production: false, 
- 
+  production: false,
+  envVar: {
+    apiKey: process.env["API_KEY"],
+  }
 };
 
 /*
