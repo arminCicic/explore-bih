@@ -9,15 +9,15 @@ export class TransfersComponent implements OnInit {
 
   questions = [
     {
-      title: 'What time should I book my transfer in order to be at the airport or port on time?',
-      content: 'For transfers to Sarajevo airport, you are advised to book your transfer 1 hour before the arrival time that your airline has announced to you. For transfers with direction to Tuzla airport, please book your transfer 2 hours before your departure time, in order to avoid any delays due to traffic.',
+      title: 'How to get around Bosnia and Herzegovina?',
+      content: 'Bosnia and Herzegovina has a well-connected transportation system that offers various modes of travel for tourists and locals alike. The most popular and affordable way to travel between cities and towns is by bus. You can find bus schedules and purchase tickets at bus stations or online.',
       isExpanded: false,
       isContentVisible: false
      
     },
     {
-      title: 'Where will I get picked up If my hotel is not accessible by car?',
-      content: 'Your driver will be waiting for you at a specific prearranged meeting point at a reachable location near your hotel.',
+      title: 'How to get to Bosnia and Herzegovina?',
+      content: 'To get to Bosnia, you can fly into Sarajevo International Airport, Mostar International Airport, or Banja Luka International Airport. Alternatively, you can take a train or bus from neighboring countries such as Croatia, Serbia, or Montenegro, or use personal vehicle',
       isExpanded: false,
       isContentVisible: false
       
@@ -30,22 +30,22 @@ export class TransfersComponent implements OnInit {
       
     },
     {
-      title: 'What is the cancelation policy on Transfer reservations?',
-      content: 'If you cancel your reservation up to 24 hours before the prearranged pick up time, no charges will be applied.',
+      title: 'Where to eat in Bosnia and Herzegovina?',
+      content: 'Bosnia and Herzegovina offers a wide range of culinary options, with traditional Bosnian cuisine being a highlight. You can find numerous restaurants and cafes in cities and towns serving cevapi, burek, and other delicious dishes. Street food vendors are also popular and offer a quick and tasty snack on the go.',
       isExpanded: false,
       isContentVisible: false
       
     },
     {
-      title: 'What If I can’t find the exact location I want to book for?',
-      content: 'Choose the area that you wish to book a transfer to or contact us to help you find the specific location that you are looking for.',
+      title: 'What is the best time to visit B&H?',
+      content: 'The best time to visit Bosnia and Herzegovina is during the shoulder seasons of spring (April to May) and fall (September to October). During this time, the weather is mild, and there are fewer crowds. Summer (June to August) is the peak tourist season with warmer weather, but it can be crowded and more expensive. Winter (December to February) is ideal for winter sports enthusiasts but can be quite cold and snowy.',
       isExpanded: false,
       isContentVisible: false
       
     },
     {
-      title: 'My flight has been delayed, what should I do?',
-      content: 'In case of a delay in your scheduled flight, the transfer time will change with no extra charge and your driver will meet you at the new arranged time.',
+      title: 'Getting around B&H?',
+      content: 'Getting around Bosnia and Herzegovina can be done by various modes of transportation, including buses, trains, taxis, rental cars, and shared taxis known as "kombi." Buses are the most common and affordable way to travel between cities and towns, while renting a car is a good option for more flexibility. Taxis and shared taxis are readily available in most cities, and trains offer a slower but scenic way to travel around the country. Just be aware of narrow roads and challenging terrain in some areas.',
       isExpanded: false,
       isContentVisible: false
       

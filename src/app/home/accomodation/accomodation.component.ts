@@ -70,10 +70,35 @@ export class AccomodationComponent implements AfterViewInit{
 
   constructor(private sanitizer: DomSanitizer) { }
 
-  ngOnInit(): void {
-    const unsafeUrl = `https://www.google.com/maps/embed/v1/place?key=${this.apiKey}&q=${this.accommodations[0].title}`;
+  async ngOnInit(): Promise<void> {
+    const location = this.accommodations[0];
+    const query = `${location.title}`;
+    const unsafeUrl = `https://www.google.com/maps/embed/v1/place?key=${this.apiKey}&q=${query}`;
     this.url = this.sanitizer.bypassSecurityTrustResourceUrl(unsafeUrl);
+  
+    // lazy-load the Google Maps embed
+    const script = document.createElement('script');
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${this.apiKey}`;
+    script.defer = true;
+    script.async = true;
+    script.onload = () => {
+      console.log('Google Maps script loaded');
+    };
+    script.onerror = (error) => {
+      console.error('Error loading Google Maps script:', error);
+    };
+    document.head.appendChild(script);
+  
+    await this.delay(1000); // wait for 1 second to ensure script is loaded
+  
+    const element = this.scrollTo.nativeElement;
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
+  
+  delay(ms: number): Promise<void> {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+  
 
   changeLocation(index: number) {
     const location = this.accommodations[index];

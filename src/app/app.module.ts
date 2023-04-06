@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-// import { MatIconModule } from '@angular/material/icon';
 import { HomeComponent } from './home/home.component';
 import { TravelGuideComponent } from './home/travel-guide/travel-guide.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -54,7 +53,6 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    // MatIconModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes, { enableTracing: true }),
     SwiperModule,

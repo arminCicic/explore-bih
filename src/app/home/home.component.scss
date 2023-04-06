@@ -1,3 +1,8 @@
+.component {
+    display: block;
+    height: 170vh;
+}
+
 .home-wrapper {
     position: relative;
     background-image: url(../../assets/images/home-bg.avif);
@@ -104,17 +109,14 @@
              width: 20px;
              margin-left: -52px;
 
-             a {
+             i {
                 background: linear-gradient(to right,#22acf4,#0583da);
-                padding: 5px 11px;
+                padding: 12px 12px;
                 color: #fff;
                 text-decoration: none;
                 border-radius: 36px;
                 display: inline-block;
 
-                .search-icon {
-                    margin-top: 5px;
-                }
              }
 
              @media (max-width: 640px) {
@@ -311,6 +313,9 @@
     }
 
 }
+
+
+
 
 
 
