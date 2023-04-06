@@ -1,0 +1,79 @@
+<div class="panorama"></div>
+<div class="title">
+   <p>Check out this amazing places</p>
+   <div>From the air, it's easy to find the best location for your holidays</div>    
+</div>
+
+<div class="video">
+    <video src="../../assets/videos/trebinje.mp4" controls></video>
+    <div class="video-dsc">
+        <p>Trebinje</p>
+        Trebinje is a picturesque city located in the southern part of Bosnia and Herzegovina, 
+        nestled in the valley of the Trebišnjica river. With its charming old town, beautiful 
+        parks and gardens, and a rich cultural and historical heritage, Trebinje is a hidden
+         gem waiting to be discovered by tourists. The city boasts a variety of attractions,
+          from ancient monasteries and stunning fortresses to cozy cafes and traditional 
+          restaurants serving delicious Balkan cuisine.
+        <div class="btn-wrapper">
+            <button (click)="openModal(1)">Watch Fullscreen</button>
+        </div>
+    </div> 
+    
+
+
+
+</div>
+
+<div class="video">
+  
+    <div class="video-dsc element-order1">
+        <p>Buna channel</p>
+        The Buna River is a stunning natural attraction located near Blagaj, Bosnia and Herzegovina. 
+        The river originates from a large underground karstic spring and flows into the Neretva River.
+         One of the main highlights of the Buna River is the Buna Spring, which creates a picturesque
+         turquoise pool surrounded by lush greenery.
+        <div class="btn-wrapper">
+            <button (click)="openModal(2)">Watch Fullscreen</button>
+        </div>
+    </div>
+    <video src="../../assets/videos/buna-canal.mp4" controls class="element-order2"></video>
+
+</div>
+
+<div class="video">
+    <video src="../../assets/videos/jahorina.mp4" controls ></video>
+    <div class="video-dsc">
+        <p>Olympic Mountain Jahorina</p>
+        Olympic Mountain Jahorina is a paradise for winter sports enthusiasts. 
+        Located in Bosnia and Herzegovina, it offers a wide range of winter 
+        activities such as skiing, snowboarding, and sledding. With over 20 
+        kilometers of ski slopes, Jahorina is the perfect destination for both
+         beginners and experienced skiers. Apart from winter sports, Jahorina also 
+         boasts breathtaking views of the surrounding mountains and forest.
+        <div class="btn-wrapper">
+            <button (click)="openModal(3)">Watch Fullscreen</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="video">
+  
+    <div class="video-dsc element-order1">
+        <p>Wild horses in Livno</p>
+        Livno is a beautiful region in Bosnia and Herzegovina where you can witness the 
+        stunning sight of wild horses running free. These magnificent creatures roam the 
+        vast wilderness of Livno and offer a unique experience for nature lovers and animal 
+        enthusiasts. Watching these wild horses gallop across the fields and hills is a truly 
+        breathtaking experience that will leave you in awe. The Livno wild horses are an 
+        important part of the region's natural heritage and a symbol of the area's untouched 
+        beauty
+        <div class="btn-wrapper">
+            <button (click)="openModal(4)">Watch Fullscreen</button>
+        </div>
+    </div>
+    <video src="../../assets/videos/livno.mp4" controls class="element-order2"></video>
+
+</div>
+
+<app-modal *ngIf="showModal" (close)="onCloseModal()" [videoUrl]="videoUrl"></app-modal>
