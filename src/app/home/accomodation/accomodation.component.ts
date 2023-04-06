@@ -91,8 +91,6 @@ export class AccomodationComponent implements AfterViewInit{
   
     await this.delay(1000); // wait for 1 second to ensure script is loaded
   
-    const element = this.scrollTo.nativeElement;
-    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
   
   delay(ms: number): Promise<void> {

@@ -1,35 +1,39 @@
-<div class="transfers-container">
-    <div class="text-container">
-        <span>High-quality B&H Transfer and Taxi Services</span>
-        <h1>Book your transfer from/to B&H or any other location in Bosnia and Herzegovina</h1>
-        <div>Pre-book safe, reliable and affordable transfer and taxi services in B&H, 
-            including airport/port transfers, hotel transfers or point-to-point transfer services 
-            around the island. Our professional English-speaking drivers and our highly equipped
-             vehicles ensure absolute comfort and convenience.
+<div class="component">
+
+    <div class="transfers-container">
+        <div class="text-container">
+            <span>High-quality B&H Transfer and Taxi Services</span>
+            <h1>Book your transfer from/to B&H or any other location in Bosnia and Herzegovina</h1>
+            <div>Pre-book safe, reliable and affordable transfer and taxi services in B&H, 
+                including airport/port transfers, hotel transfers or point-to-point transfer services 
+                around the island. Our professional English-speaking drivers and our highly equipped
+                 vehicles ensure absolute comfort and convenience.
+            </div>
         </div>
-    </div>
-
-    <div>
-        
-        <div class="questions-box">
-            <h3>Frequently Asked Questions</h3>
-
-
-            <div *ngFor="let question of questions; let i = index" class="single-question" (click)="toggleArrow(i)">
-                <h5>{{question.title}}</h5>
-                <span class="material-symbols-outlined">
-                  {{question.isExpanded ? 'expand_less' : 'expand_more'}}
-                </span>
-                <span *ngIf="question.isContentVisible">{{question.content}}</span>
-              </div>
-
-
-       
+    
+        <div>
             
+            <div class="questions-box">
+                <h3>Frequently Asked Questions</h3>
+    
+    
+                <div *ngFor="let question of questions; let i = index" class="single-question" (click)="toggleArrow(i)">
+                    <h5>{{question.title}}</h5>
+                    <span class="material-symbols-outlined">
+                      {{question.isExpanded ? 'expand_less' : 'expand_more'}}
+                    </span>
+                    <span *ngIf="question.isContentVisible">{{question.content}}</span>
+                  </div>
+    
+    
            
-
-
-
+                
+               
+    
+    
+    
+            </div>
         </div>
     </div>
 </div>
+
