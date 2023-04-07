@@ -11,7 +11,7 @@
   </div>  
   
   <div class="locations-container">
-    <div *ngFor="let accommodation of accommodations; let i = index;" (click)="changeLocation(i)" class="location-item">
+    <div *ngFor="let accommodation of accommodations; let i = index;" class="location-item">
       <img src="{{accommodation.image}}">
       <div class="location-dsc">
         <h4>{{accommodation.title}}</h4>
@@ -19,22 +19,6 @@
         <p>{{accommodation.text}}</p>
       </div>
     </div>   
-  </div>
-  
-  
-  
-  <div id="scroll-to" #scrollTo class="maps-container">
-  
-    <iframe
-      width="600"
-      height="450"
-      style="border:0"
-      loading="lazy"
-      allowfullscreen
-      referrerpolicy="no-referrer-when-downgrade"
-      [src]="url">
-    </iframe>
-  
   </div>
   
   
