@@ -19,11 +19,10 @@ import { environment } from 'src/environments/environment';
 
 export class AccomodationComponent implements AfterViewInit{  
 
-  @ViewChild('scrollTo') scrollTo!: ElementRef;
+  @ViewChild('scrollTo') scrollTo!: ElementRef; 
 
- 
+  apiKey = process.env['API_KEY'];
 
-  apiKey = environment.envVar.apiKey;
 
 
   url!: SafeResourceUrl;
