@@ -5,6 +5,8 @@ import { AfterViewInit, Component, ElementRef, ViewEncapsulation, ViewChild } fr
 import { ACCOMODATIONS } from '../../../assets/data/articles';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
+import { environment } from 'src/environments/environment.prod';
+
 
 
 
@@ -21,7 +23,9 @@ export class AccomodationComponent implements AfterViewInit{
 
   @ViewChild('scrollTo') scrollTo!: ElementRef;  
 
-  apiKey = "AIzaSyBbpucpFe_SpT0suMgubOt_gI4EvaZrthE";
+  // apiKey = "AIzaSyBbpucpFe_SpT0suMgubOt_gI4EvaZrthE";
+
+  apiKey = environment.MAPS_API_KEY;
 
 
 

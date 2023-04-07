@@ -1,6 +1,4 @@
 export const environment = {
-  production: true,
-  envVar: {
-    apiKey: process.env["API_KEY"],
-  }
+  production: false,
+  MAPS_API_KEY: process.env["API_KEY"]
 };

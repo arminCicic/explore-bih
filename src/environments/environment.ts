@@ -8,10 +8,12 @@
 
 export const environment = {
   production: false,
-  envVar: {
-    apiKey: process.env["API_KEY"],
-  }
+  MAPS_API_KEY: process.env["API_KEY"]
 };
+
+
+
+
 
 /*
  * For easier debugging in development mode, you can import the following file
