@@ -65,14 +65,30 @@
 
 @media (max-width: 800px) {
 .footer-container {
-    flex-direction: column;
+   justify-content: center;
     padding: 20px 60px 60px 60px;
 
+   
 
 
     .footer-bottom {
-        height: 5vh;
+        height: 4vh;
           }
 }
 
+}
+
+@media (max-width: 446px) {
+    .footer-container {
+        .text {
+            display: none;
+        }
+
+        .footer-item {
+            
+                    img {
+                        width: 90px;
+                    }
+        }
+    }
 }

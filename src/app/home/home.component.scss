@@ -1,7 +1,5 @@
 .component {
-    display: block;
-    height: 200vh;
-    overflow-x: hidden;
+   height: 225vh;    
 }
 
 .home-wrapper {
@@ -317,13 +315,13 @@
 
 @media (max-width: 800px) {
     .component {
-        height: 222vh;
+        height: 278vh;
     }
 }
 
 @media (max-width: 610px) {
     .component {
-        height: 247vh;
+        height: 279vh;
     }
 
     .home-wrapper {
@@ -342,13 +340,13 @@
 }
 @media (max-width: 570px) {
     .component {
-        height: 266vh;
+        height: 300vh;
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 446px) {
     .component {
-        height: 388vh;
+        height: 473vh;
     }
 }
 
