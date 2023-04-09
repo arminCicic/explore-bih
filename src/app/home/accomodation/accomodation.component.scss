@@ -2,6 +2,13 @@
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
 
+.accomodattion-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
 .accomodation-img {
     background-image: url("../../../assets/images/accomodation-lg.jpg");
     background-size: cover;
@@ -53,7 +60,7 @@
     cursor: pointer;
 
     img {
-      min-width: 230px;
+      min-width: 200px;
       height: 166px;
       border-radius: 6px;
     }
@@ -98,27 +105,47 @@
 }
 
 @media (max-width: 860px) {
+
+
+
   .locations-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
+   
 
     .location-item {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       width: auto;
           p {
         max-width: 360px;
       }
 
+      h4 {
+        text-align: center;
+      }
+
       img {
         max-width: 250px;
+      }
+
+      .dsc {
+        display: none;
       }
     }
      }
 
      .accomodation-img {
+      min-height: 60vh;
+
+      p {
+        font-size: 40px;
+      }
        .accomodation-title {
-        font-size: 18px;
+        font-size: 13px;
        }
 
      }

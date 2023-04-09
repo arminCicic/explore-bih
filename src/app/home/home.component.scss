@@ -1,6 +1,6 @@
 .component {
     display: block;
-    height: 200vh;
+    height: 250vh;
     overflow-x: hidden;
 }
 
@@ -315,15 +315,15 @@
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 810px) {
     .component {
-        height: 222vh;
+        height: 277vh;
     }
 }
 
-@media (max-width: 610px) {
+@media (max-width: 635px) {
     .component {
-        height: 247vh;
+        height: 310vh;
     }
 
     .home-wrapper {
@@ -340,15 +340,15 @@
         
         
 }
-@media (max-width: 570px) {
+@media (max-width: 573px) {
     .component {
-        height: 266vh;
+        height: 330vh;
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
     .component {
-        height: 388vh;
+        height: 350vh;
     }
 }
 
