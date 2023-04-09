@@ -16,12 +16,14 @@
 
 .flex-container {
     position: relative;
-    top:74%;
+    top:64%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 2.5rem 6.25rem;
     gap: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden;
 
        
 
@@ -138,7 +140,7 @@
 
   @media (max-width: 760px) {
     .flex-container{
-      margin: 0.2rem 0.5rem;;
+      margin: 3rem 0.5rem 0.2rem;;
 
       .row {
         .col {
