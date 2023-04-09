@@ -83,13 +83,21 @@ order: 1;
 
  .video-dsc {
     padding: 40px 25vw 30px;
+
+    .btn-wrapper {
+
+        button {
+            padding: 13px 9px;
+        }
+    }
+
  }
    
 
     video {        
             margin: 0 auto;  
             width: 51vw;
-            height: 320px;
+          
         }
 
         .element-order1 {
@@ -116,7 +124,8 @@ order: 1;
 @media (max-width: 680px) {
     .video {
         video {
-            width: 85vw;
+            width: 92vw;
+           
         }
         .video-dsc {
             padding: 40px 8vw 30px;
