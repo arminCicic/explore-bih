@@ -1,31 +1,35 @@
-<div class="tours-title">
-    <div class="small-title">TRAVEL GUIDES • EXPLORE BOSNIA AND HERZEGOVINA</div>
-    <div class="large-title">Top 10 + 1 Things to Do in Bosnia and Herzegovina</div>
-    <div class="title-dsc">Bosnia and Herzegovina has plenty of must-see attractions that you should include 
-        in your itinerary if you wish to experience B&H in a short space of time. Here’s an easy top 10+1 list to get you started.</div>
-</div>
+<div class="tours">
 
-
-<img class="img-lg" src="../../../assets/images/bih-tours-lg.jpg">
-
-<div class="guide">
-    <p>Bosnia and Herzegovina is a land of diverse natural beauty, rich history and culture.
-         From the picturesque old towns to stunning landscapes, this country has something 
-         to offer for everyone. </p>
-         <p>Mostar, Sarajevo and Banja Luka are some of the most popular destinations
-             in Bosnia and Herzegovina. Not to forget, the emerald green rivers,
-              waterfalls, and scenic mountains await to give you an adventure overload!
-        </p>
-
-</div>
-
-<div *ngFor="let article of articles" class="guide">
-    <div class="single-guide">
-        <h3>{{article.title}}</h3>
-        <img src="{{ article.imageUrl }}" alt="{{ article.title }}">
-
-        <p>{{article.text1}}</p>
-        <p>{{article.text2}}</p>
-        <p>{{article.text3}}</p>
+    <div class="tours-title">
+        <div class="small-title">TRAVEL GUIDES • EXPLORE BOSNIA AND HERZEGOVINA</div>
+        <div class="large-title">Top 10 + 1 Things to Do in Bosnia and Herzegovina</div>
+        <div class="title-dsc">Bosnia and Herzegovina has plenty of must-see attractions that you should include 
+            in your itinerary if you wish to experience B&H in a short space of time. Here’s an easy top 10+1 list to get you started.</div>
     </div>
+    
+    
+    <img class="img-lg" src="../../../assets/images/bih-tours-lg.jpg">
+    
+    <div class="guide">
+        <p>Bosnia and Herzegovina is a land of diverse natural beauty, rich history and culture.
+             From the picturesque old towns to stunning landscapes, this country has something 
+             to offer for everyone. </p>
+             <p>Mostar, Sarajevo and Banja Luka are some of the most popular destinations
+                 in Bosnia and Herzegovina. Not to forget, the emerald green rivers,
+                  waterfalls, and scenic mountains await to give you an adventure overload!
+            </p>
+    
+    </div>
+    
+    <div *ngFor="let article of articles" class="guide">
+        <div class="single-guide">
+            <h3>{{article.title}}</h3>
+            <img src="{{ article.imageUrl }}" alt="{{ article.title }}">
+    
+            <p>{{article.text1}}</p>
+            <p>{{article.text2}}</p>
+            <p>{{article.text3}}</p>
+        </div>
+    </div>
+
 </div>

@@ -1,3 +1,12 @@
+.tours {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+
+
 .tours-title {
     .small-title {
     font-size: 13px;
@@ -75,13 +84,40 @@
 
 
 @media (max-width: 860px) {
-    .guide {
-        .single-guide {
-            margin: 40px 0px 10px 0px;          
 
+    .tours-title {
+        .small-title {
+            padding: 120px 15px 45px;
+        }
+
+        .large-title {
+            font-size: 38px;
+            padding: 5px 15px;
+        }
+
+        .title-dsc {
+            font-size: 20px;
+            padding: 5px 15px;
+        }
+
+    }
+
+
+    .guide {
+        p {
+            margin: 0;
+            font-size: 20px;
+            padding: 5px 15px;
+        }
+        .single-guide {
+            margin: 40px 0px 10px 0px;   
+            
             p {
-                margin-right: 0px;
+                margin: 0;
+                font-size: 20px;
+                padding: 5px 15px;
             }
+
         }
     }
 }

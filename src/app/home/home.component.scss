@@ -1,6 +1,7 @@
 .component {
     display: block;
-    height: 250vh;
+    height: 200vh;
+    overflow-x: hidden;
 }
 
 .home-wrapper {
@@ -281,7 +282,7 @@
             max-width: 1050px;
             padding: 0 15px;
             line-height: 36px;
-            padding: 160px 5px 80px 5px;
+            padding: 160px 15px 80px 15px;
             margin: -8px auto 30px auto;;
 
            em {
@@ -307,12 +308,51 @@
 
         @media (max-width: 800px) {
             .who-we-are {
-                padding-top: 220px;
+                padding-top: 320px;
             }
         }
     }
 
 }
+
+@media (max-width: 800px) {
+    .component {
+        height: 222vh;
+    }
+}
+
+@media (max-width: 610px) {
+    .component {
+        height: 247vh;
+    }
+
+    .home-wrapper {
+        .global-search {
+            top: 60%;
+            
+            .global-search-input-wrapper {
+                min-width: 0px;
+            }       
+             } 
+    } 
+    
+    
+        
+        
+}
+@media (max-width: 570px) {
+    .component {
+        height: 266vh;
+    }
+}
+
+@media (max-width: 420px) {
+    .component {
+        height: 388vh;
+    }
+}
+
+
 
 
 
