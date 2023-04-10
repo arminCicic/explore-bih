@@ -14,6 +14,7 @@ export class NavbarComponent implements OnInit {
   public selectedCurrency: string = 'USD';
 
   @HostListener('document:click', ['$event'])
+
   onClick(event: { target: any; }) {
     if (!this.isClickInside(event.target)) {
       this.showDropdown = false;
@@ -22,6 +23,7 @@ export class NavbarComponent implements OnInit {
     if (!this.isMenuClickInside(event.target)) {
       this.showMenu = false;
     }
+   
   }
   
   isClickInside(target: any): boolean {
@@ -34,6 +36,8 @@ export class NavbarComponent implements OnInit {
     const menuElement = document.querySelector('.dropdown-menu');
     const menuIconElement = document.querySelector('.menu');
     return (menuElement !== null && menuElement.contains(target)) || (menuIconElement !== null && menuIconElement.contains(target));
+
+    
   }
 
   constructor() {}
