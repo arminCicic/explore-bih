@@ -8,5 +8,5 @@ App will showcase the most interesting and exciting places to visit in Bosnia an
 
 Built with Angular framework, I focused on showcase of simple angular features and full app responsiveness using custom CSS. 
 
-Working on front-end of the application. After adding back-end, app will handle user authentication, data storage, and complete search mechanism.
+Currently working on front-end of the application. After adding back-end, app will handle user authentication, data storage and have complete search mechanism.
 
