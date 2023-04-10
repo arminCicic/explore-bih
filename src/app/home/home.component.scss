@@ -131,6 +131,12 @@
         }
     }
 
+    @media (max-width: 640px) {
+        .global-search {
+            width: 93%;
+        }
+    }
+ 
     .icons-container {
         position: absolute;
         top: 70%;

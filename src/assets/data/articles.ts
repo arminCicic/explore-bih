@@ -23,7 +23,7 @@ export interface Article {
 
   export const ARTICLES: Article[] = [
     {
-      title: '1. Old Bridge (Stari Most)',
+      title: '1. Old Bridge',
       text1: 'The Old Bridge in Mostar is a stunning example of Ottoman architecture and a remarkable symbol of the city`s history and culture. Spanning the Neretva River, the bridge was originally constructed in the 16th century and stood for over 400 years before being destroyed during the Bosnian War. However, in a remarkable feat of engineering and dedication, the bridge was reconstructed using traditional materials and techniques to restore it to its former glory.',
       text2: 'Today, the Old Bridge is a UNESCO World Heritage Site and a must-see attraction for tourists visiting Bosnia and Herzegovina. Visitors can wander along the cobbled streets of the old town and marvel at the bridge`s intricate design and unique features, such as its pointed arch and humpback shape. For the brave-hearted, the bridge also offers the opportunity to watch local daredevils dive from its 24-meter height into the turquoise waters of the river below.',
       text3: 'But the Old Bridge is more than just a pretty sight - it holds significant cultural and historical significance for the people of Mostar. As a symbol of reconciliation and unity, the bridge represents the city`s resilience in the face of conflict and division. For visitors, the Old Bridge offers a glimpse into the past while also serving as a reminder of the importance of peace and harmony in our world today',

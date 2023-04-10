@@ -111,6 +111,10 @@ order: 1;
 
 @media (max-width: 960px) {
 
+    .panorama {
+        height: 45vh;
+    }
+
     .video {
         video {
             width: 60vw;
