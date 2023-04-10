@@ -319,6 +319,18 @@
     .component {
         height: 277vh;
     }
+
+    .home-wrapper {
+        .section-wrapper {
+            .who-we-are {
+                font-size: 18px;
+
+                .big-title {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 635px) {
