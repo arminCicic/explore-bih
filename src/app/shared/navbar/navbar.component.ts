@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { ModalService } from 'src/app/services/modal.service';
 
 @Component({
   selector: 'app-navbar',
@@ -40,9 +41,13 @@ export class NavbarComponent implements OnInit {
     
   }
 
-  constructor() {}
+  constructor(private modalService: ModalService) {}
 
   ngOnInit() {}
+
+  btnClick() {   
+    this.modalService.emitButtonClick();
+   }
  
   changeCurrency(currency: string) {
     this.selectedCurrency = currency;
@@ -61,4 +66,9 @@ export class NavbarComponent implements OnInit {
     this.menuIcon = !this.menuIcon;
     this.showMenu = !this.showMenu;
   }
+
+  
+
+
+
 }

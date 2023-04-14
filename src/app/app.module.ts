@@ -52,9 +52,9 @@ const appRoutes: Routes = [
    
   ],
   imports: [
+    [RouterModule.forRoot(appRoutes, {scrollPositionRestoration: 'enabled'})],
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes, { enableTracing: true }),
     SwiperModule,
   
    
