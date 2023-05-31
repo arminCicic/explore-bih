@@ -1,0 +1,19 @@
+<div *ngIf="modalOpen" class="login-modal-overlay" (click)="onCloseModal($event)" #loginModalOverlay>
+    <div class="login-container">
+        <span>Log in to your account</span>
+        <span>Manage your reservation and talk directly to tour operator</span>
+
+        <p>Email</p>
+        <input type="email">
+
+        <p>Password</p>
+        <input type="password">
+
+        <span>Forgot your password?</span>
+
+        <div class="buttons">
+            <button (click)="onCancelModal()" class="cancel">Cancel</button>
+            <button (click)="onLogIn()">Log in</button>
+        </div>
+    </div>
+</div>

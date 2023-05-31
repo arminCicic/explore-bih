@@ -16,6 +16,7 @@ import { ModalComponent } from './modal/modal.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { RiversComponent } from './home/rivers/rivers.component';
 import { TransfersComponent } from './home/transfers/transfers.component';
+import { LoginComponent } from './home/login/login.component';
 
 
 
@@ -27,6 +28,7 @@ const appRoutes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'rivers', component: RiversComponent },
   { path: 'transfers', component: TransfersComponent },
+  { path: 'login', component: LoginComponent },
     { path: 'home', component: HomeComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: '**', redirectTo: 'home' }
@@ -48,6 +50,7 @@ const appRoutes: Routes = [
     ContactComponent,
     RiversComponent,
     TransfersComponent,
+    LoginComponent,
   
    
   ],

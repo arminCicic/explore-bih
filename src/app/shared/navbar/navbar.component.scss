@@ -26,12 +26,17 @@
                 cursor: pointer;
                 padding-bottom: 7px;
                 font-size: 17px;
+                min-width: 15px;
             }
 
             
         }
         
         .navbar-icons {
+            a {
+                cursor: pointer;
+            }
+
             .icons-top {
              padding-top: 7px;
             }

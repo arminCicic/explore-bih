@@ -46,7 +46,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {}
 
   btnClick() {   
-    this.modalService.emitButtonClick();
+    this.modalService.emitButtonClick();    
    }
  
   changeCurrency(currency: string) {
